@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+    # 这一行很重要，告诉 Spring 用 Druid
+    type: com.alibaba.druid.pool.DruidDataSource
+    # Druid 特定配置要放在这里，不是 druid 下级
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/junhong_takeout?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    # Druid 连接池配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.junhong.entity
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com:
+      junhong: info
