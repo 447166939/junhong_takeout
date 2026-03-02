@@ -1,14 +1,13 @@
 package com.junhong.controller.admin;
 import com.junhong.dto.EmployeeDTO;
+import com.junhong.dto.EmployeePageQueryDTO;
+import com.junhong.result.PageResult;
 import com.junhong.service.EmployeeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.junhong.result.Result;
 
 /*员工管理****
@@ -32,5 +31,18 @@ public class EmployeeController {
      log.info("新增员工{}",employeeDTO);
      employeeService.save(employeeDTO);
       return Result.success();
+   }
+
+    /**
+     * 员工分页查询
+     * @param employeePageQueryDTO
+     * @return
+     */
+   @GetMapping("/list")
+   @ApiOperation("员工分页查询")
+   public Result<PageResult> list(EmployeePageQueryDTO employeePageQueryDTO) {
+        log.info("分页查询参数为:{}",employeePageQueryDTO);
+        PageResult pageResult=employeeService.queryPage(employeePageQueryDTO);
+        return Result.success(pageResult);
    }
 }
