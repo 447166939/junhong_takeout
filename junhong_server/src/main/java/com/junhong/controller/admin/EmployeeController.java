@@ -3,10 +3,12 @@ import com.junhong.dto.EmployeeDTO;
 import com.junhong.dto.EmployeePageQueryDTO;
 import com.junhong.result.PageResult;
 import com.junhong.service.EmployeeService;
+import com.junhong.validation.AddGroup;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import com.junhong.result.Result;
 
@@ -27,12 +29,11 @@ public class EmployeeController {
      */
     @PostMapping("/add")
     @ApiOperation("新增员工")
- public Result save(@RequestBody EmployeeDTO employeeDTO) {
+ public Result save(@Validated(AddGroup.class) @RequestBody EmployeeDTO employeeDTO) {
      log.info("新增员工{}",employeeDTO);
      employeeService.save(employeeDTO);
       return Result.success();
    }
-
     /**
      * 员工分页查询
      * @param employeePageQueryDTO
