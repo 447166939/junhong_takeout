@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="376dab4b-9490-42fb-8a38-1ef846054a86" name="Changes" comment="添加全局异常处理">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/aspect/AutoFillAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/aspect/AutoFillAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/controller/admin/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/controller/admin/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/mapper/EmployeeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="376dab4b-9490-42fb-8a38-1ef846054a86" name="Changes" comment="增加启用禁用员工账号接口" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +22,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:447166939/junhong_takeout.git",
+    "accountId": "a41c9efd-a3f2-42df-8190-ba6019abf999"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -124,7 +122,7 @@
       <workItem from="1772462612917" duration="7173000" />
       <workItem from="1772470771381" duration="544000" />
       <workItem from="1772471360287" duration="445000" />
-      <workItem from="1772471828423" duration="4467000" />
+      <workItem from="1772471828423" duration="4832000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -198,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772472669762</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="增加启用禁用员工账号接口">
+      <option name="closed" value="true" />
+      <created>1772478559457</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1772478559457</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +215,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="添加分页查询员工" />
     <MESSAGE value="添加全局异常处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加全局异常处理" />
+    <MESSAGE value="增加启用禁用员工账号接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加启用禁用员工账号接口" />
   </component>
 </project>
