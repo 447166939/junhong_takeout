@@ -23,4 +23,6 @@ public interface EmployeeMapper {
     @AutoFill(value = OperationType.INSERT)
     void insert(Employee employee);
     Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+    @AutoFill(value = OperationType.UPDATE)
+    void updateStatus(Employee employee);
 }

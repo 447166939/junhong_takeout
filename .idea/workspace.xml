@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="376dab4b-9490-42fb-8a38-1ef846054a86" name="Changes" comment="添加全局异常处理" />
+    <list default="true" id="376dab4b-9490-42fb-8a38-1ef846054a86" name="Changes" comment="添加全局异常处理">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/aspect/AutoFillAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/aspect/AutoFillAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/controller/admin/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/controller/admin/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/mapper/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +124,7 @@
       <workItem from="1772462612917" duration="7173000" />
       <workItem from="1772470771381" duration="544000" />
       <workItem from="1772471360287" duration="445000" />
-      <workItem from="1772471828423" duration="753000" />
+      <workItem from="1772471828423" duration="4467000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -182,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772472588223</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加全局异常处理">
+      <option name="closed" value="true" />
+      <created>1772472669762</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772472669762</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
