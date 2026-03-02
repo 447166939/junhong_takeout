@@ -27,7 +27,7 @@ public class AutoFillAspect {
      * 切入点
      * com.server.admin.mapper包下包含AutoFill注解的所有类和方法
      */
-    @Pointcut("execution(* com.junhong.admin.mapper.*.*(..)) && @annotation(com.junhong.annotation.AutoFill)")
+    @Pointcut("execution(* com.junhong.mapper.*.*(..)) && @annotation(com.junhong.annotation.AutoFill)")
     public void autoFillPointCut() {
 
     }
