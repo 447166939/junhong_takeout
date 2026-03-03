@@ -1,9 +1,9 @@
 package com.junhong.utils;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.JwtBuilder;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
+import io.jsonwebtoken.security.Keys;
+
+import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
 import java.util.Map;
@@ -38,6 +38,11 @@ public class JwtUtil {
         return builder.compact();
     }
 
+    private static SecretKey getSigningKey(String secretKey) {
+        // 将字符串密钥转换为字节数组，并生成符合 HMAC-SHA 算法的安全密钥
+        return Keys.hmacShaKeyFor(secretKey.getBytes(StandardCharsets.UTF_8));
+    }
+
     /**
      * Token解密
      *
@@ -45,16 +50,17 @@ public class JwtUtil {
      * @param token     加密后的token
      * @return
      */
-    /*
-    public static Claims parseJWT(String secretKey, String token) {
-        // 得到DefaultJwtParser
 
-        Claims claims = Jwts.parser()
-                // 设置签名的秘钥
-                .setSigningKey(secretKey.getBytes(StandardCharsets.UTF_8))
-                // 设置需要解析的jwt
-                .parseClaimsJws(token).getBody();
-        return claims;
-    }***/
+    public static Claims parseJWT(String secretKey, String token) {
+
+        Jws<Claims> jws = Jwts.parser()
+                .verifyWith(getSigningKey(secretKey)) // 0.12.x 使用 verifyWith 方法设置密钥
+                .build()
+                .parseSignedClaims(token);   // 解析并获取签名后的 Claims
+
+        // 2. 返回解析后的载荷 (Claims)
+        return jws.getPayload();
+    }
+
 
 }
