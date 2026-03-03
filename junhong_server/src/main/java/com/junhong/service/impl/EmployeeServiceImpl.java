@@ -70,4 +70,10 @@ public class EmployeeServiceImpl implements EmployeeService {
         //3、返回实体对象
         return employee;
     }
+
+    @Override
+    public Employee getById(Long id) {
+
+        return employeeMapper.getEmployee(id);
+    }
 }

@@ -29,4 +29,6 @@ public interface EmployeeService {
     void startOrStop(Integer status, long id);
 
     Employee login(@Valid EmployeeDTO employeeDTO);
+
+    Employee getById(Long id);
 }
