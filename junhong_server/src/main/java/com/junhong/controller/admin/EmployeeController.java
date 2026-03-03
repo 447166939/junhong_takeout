@@ -1,16 +1,26 @@
 package com.junhong.controller.admin;
+import com.junhong.constant.JwtClaimsConstant;
 import com.junhong.dto.EmployeeDTO;
 import com.junhong.dto.EmployeePageQueryDTO;
+import com.junhong.entity.Employee;
+import com.junhong.properties.JwtProperties;
 import com.junhong.result.PageResult;
 import com.junhong.service.EmployeeService;
+import com.junhong.utils.JwtUtil;
 import com.junhong.validation.AddGroup;
+import com.junhong.vo.EmployeeLoginVO;
+import com.junhong.vo.UserLoginVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import com.junhong.result.Result;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /*员工管理****
 ************
@@ -22,6 +32,33 @@ import com.junhong.result.Result;
 public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
+    @Autowired
+    private JwtProperties jwtProperties;
+
+    /**
+     * 员工登录
+     * @param employeeDTO
+     * @return
+     */
+    @PostMapping("/login")
+    @ApiOperation("员工登录接口")
+    public Result<EmployeeLoginVO> login(@Valid @RequestBody EmployeeDTO employeeDTO) {
+        Employee employee=employeeService.login(employeeDTO);
+        //登录成功后，生成jwt令牌
+        Map<String, Object> claims = new HashMap<>();
+        claims.put(JwtClaimsConstant.EMP_ID, employee.getId());
+        String token = JwtUtil.createJWT(
+                jwtProperties.getAdminSecretKey(),
+                jwtProperties.getAdminTtl(),
+                claims);
+        EmployeeLoginVO employeeLoginVO = EmployeeLoginVO.builder()
+                .id(employee.getId())
+                .userName(employee.getUsername())
+                .name(employee.getName())
+                .token(token)
+                .build();
+        return Result.success(employeeLoginVO);
+    }
     /**
      * 新增员工
      * @param employeeDTO

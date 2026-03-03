@@ -3,7 +3,9 @@ package com.junhong.service;
 
 import com.junhong.dto.EmployeeDTO;
 import com.junhong.dto.EmployeePageQueryDTO;
+import com.junhong.entity.Employee;
 import com.junhong.result.PageResult;
+import jakarta.validation.Valid;
 
 public interface EmployeeService {
     /**
@@ -25,4 +27,6 @@ public interface EmployeeService {
      * @param id
      */
     void startOrStop(Integer status, long id);
+
+    Employee login(@Valid EmployeeDTO employeeDTO);
 }

@@ -21,5 +21,8 @@
         </set>
         where id = #{id}
     </update>
-
+    <!--    根据用户名查询员工-->
+    <select id="getByUsername" resultType="Employee">
+        select * from employee where username = #{username}
+    </select>
 </mapper>

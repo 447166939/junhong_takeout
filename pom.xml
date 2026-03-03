@@ -27,7 +27,7 @@
         <aliyun.sdk.oss>3.10.2</aliyun.sdk.oss>
         <knife4j>3.0.2</knife4j>
         <aspectj>1.9.24</aspectj>
-        <jjwt>0.9.1</jjwt>
+        <jjwt>0.12.6</jjwt>
         <jaxb-api>2.3.1</jaxb-api>
         <poi>3.16</poi>
         <mysql.version>8.0.33</mysql.version>
@@ -66,6 +66,11 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt}</version>
             </dependency>
             <dependency>
                 <groupId>com.mysql</groupId>
