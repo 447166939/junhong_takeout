@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="376dab4b-9490-42fb-8a38-1ef846054a86" name="Changes" comment="添加器拦截器获取当前登录用户id以便以后更新数据库自动填充创建人和更新人id">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/controller/admin/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/controller/admin/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/mapper/EmployeeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/interceptor/JwtTokenAdminInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/interceptor/JwtTokenAdminInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,6 +70,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.JunhongApplication.executor": "Run",
+    "JUnit.SpringDataRedisTest.testRedisTemplate.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
@@ -78,7 +82,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.JunhongApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -90,7 +93,7 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -109,6 +112,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringDataRedisTest.testRedisTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junhong_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junhong.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.junhong.test" />
+      <option name="MAIN_CLASS_NAME" value="com.junhong.test.SpringDataRedisTest" />
+      <option name="METHOD_NAME" value="testRedisTemplate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JunhongApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="junhong_server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.junhong.JunhongApplication" />
@@ -118,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringDataRedisTest.testRedisTemplate" />
         <item itemvalue="Application.JunhongApplication" />
       </list>
     </recent_temporary>
@@ -145,6 +165,13 @@
       <workItem from="1772471360287" duration="445000" />
       <workItem from="1772471828423" duration="9036000" />
       <workItem from="1772552227820" duration="18124000" />
+      <workItem from="1772652140918" duration="429000" />
+      <workItem from="1772652607858" duration="126000" />
+      <workItem from="1772652783060" duration="55000" />
+      <workItem from="1772652857903" duration="102000" />
+      <workItem from="1772653006789" duration="25000" />
+      <workItem from="1772653041859" duration="4511000" />
+      <workItem from="1772665941464" duration="1934000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

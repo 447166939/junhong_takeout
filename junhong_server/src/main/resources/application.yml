@@ -18,6 +18,12 @@ spring:
     minIdle: 5
     maxActive: 20
     maxWait: 60000
+  data:
+    redis:
+      host: ${junhong.redis.host}
+      port: ${junhong.redis.port}
+      database: ${junhong.redis.database}
+      password: ${junhong.redis.password}
 mybatis:
   mapper-locations: classpath:mapper/**/*.xml
   type-aliases-package: com.junhong.entity

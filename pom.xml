@@ -32,6 +32,7 @@
         <poi>3.16</poi>
         <mysql.version>8.0.33</mysql.version>
         <validation.version>3.5.3</validation.version>
+        <redis.version>3.4.3</redis.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -86,6 +87,11 @@
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pagehelper}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
