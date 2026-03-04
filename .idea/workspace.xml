@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="376dab4b-9490-42fb-8a38-1ef846054a86" name="Changes" comment="添加器拦截器获取当前登录用户id以便以后更新数据库自动填充创建人和更新人id">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/interceptor/JwtTokenAdminInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/java/com/junhong/interceptor/JwtTokenAdminInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junhong_server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/junhong_server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="376dab4b-9490-42fb-8a38-1ef846054a86" name="Changes" comment="增加redis增加测试类" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +162,7 @@
       <workItem from="1772652857903" duration="102000" />
       <workItem from="1772653006789" duration="25000" />
       <workItem from="1772653041859" duration="4511000" />
-      <workItem from="1772665941464" duration="1934000" />
+      <workItem from="1772665941464" duration="2282000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -293,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772573365897</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="增加redis增加测试类">
+      <option name="closed" value="true" />
+      <created>1772668287869</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1772668287869</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +306,7 @@
     <MESSAGE value="增加启用禁用员工账号接口" />
     <MESSAGE value="增加员工登录接口" />
     <MESSAGE value="添加器拦截器获取当前登录用户id以便以后更新数据库自动填充创建人和更新人id" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加器拦截器获取当前登录用户id以便以后更新数据库自动填充创建人和更新人id" />
+    <MESSAGE value="增加redis增加测试类" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加redis增加测试类" />
   </component>
 </project>
